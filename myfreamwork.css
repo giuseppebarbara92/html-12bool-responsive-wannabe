@@ -1,8 +1,8 @@
 [class^="col-"] {
   float: left;
-  height: 200px;
-  background-color: pink;
-  border: 1px solid black;
+  height: auto;
+  padding: 20px 20px;
+  overflow: hidden;
 }
 
 
@@ -99,7 +99,15 @@
     margin-left: calc((100% / 12) * 12);
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
+
+  .container h2{
+    font-size: 35px;
+    line-height: 30px;
+    border-bottom: 2px solid #428bca;
+    padding: 10px;
+
+  }
 
   /* ELEMENTI DI GRANDEZZA IN DODICESIMI PER md */
 
@@ -187,6 +195,16 @@
 
 @media screen and (max-width: 480px) {
 
+    .container   {
+      text-align: center;
+    }
+
+    h2 {
+      border-bottom: 2px solid #428bca;
+      padding-bottom: 5px;
+    }
+
+
   /* ELEMENTI DI GRANDEZZA IN DODICESIMI PER xs */
 
   .col-xs-12 {
@@ -268,4 +286,16 @@
       margin-left: calc((100% / 12) * 12);
   }
 
+}
+
+@media screen and (min-width: 769px){
+  .container {
+    text-align: center;
+  }
+
+  h2 {
+    border-bottom: 2px solid #428bca;
+    padding: 10px;
+    display: inline;
+  }
 }
